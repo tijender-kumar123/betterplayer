@@ -96,6 +96,7 @@ class _BetterPlayerMaterialControlsState
         child: Stack(
           fit: StackFit.expand,
           children: [
+            _buildMyLogo(),
             if (_wasLoading)
               Center(child: _buildLoadingWidget())
             else
@@ -110,6 +111,16 @@ class _BetterPlayerMaterialControlsState
             _buildNextVideoWidget(),
           ],
         ),
+      ),
+    );
+  }
+
+  Widget _buildMyLogo() {
+    return Container(
+      alignment: Alignment.centerLeft,
+      width: 100,
+      child: Image.asset(
+        'assets/logo.png',
       ),
     );
   }
