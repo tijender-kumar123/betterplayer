@@ -97,7 +97,6 @@ class _BetterPlayerMaterialControlsState
           fit: StackFit.expand,
           children: [
             _buildMyLogo(),
-            _buildMainWidget(),
             if (_wasLoading)
               Center(child: _buildLoadingWidget())
             else
