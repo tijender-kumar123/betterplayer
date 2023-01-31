@@ -95,6 +95,7 @@ class _BetterPlayerCupertinoControlsState
         Expanded(child: Center(child: _buildLoadingWidget()))
       else
         _buildHitArea(),
+      _buildMyLogo(),
       _buildNextVideoWidget(),
       _buildBottomBar(
         backgroundColor,
@@ -127,6 +128,18 @@ class _BetterPlayerCupertinoControlsState
           absorbing: controlsNotVisible,
           child:
               isFullScreen ? SafeArea(child: controlsColumn) : controlsColumn),
+    );
+  }
+
+  Widget _buildMyLogo() {
+    return Align(
+      alignment: Alignment.bottomLeft,
+      child: Container(
+        width: 50,
+        child: Image.asset(
+          'assets/logo.png',
+        ),
+      ),
     );
   }
 

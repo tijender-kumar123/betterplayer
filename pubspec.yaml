@@ -38,3 +38,6 @@ flutter:
         pluginClass: BetterPlayerPlugin
       ios:
         pluginClass: BetterPlayerPlugin
+
+  assets:
+    - assets/.
