@@ -119,7 +119,7 @@ class _BetterPlayerMaterialControlsState
   Widget _buildMyLogo() {
     return Container(
       alignment: Alignment.centerLeft,
-      width: 100,
+      width: 50,
       child: Image.asset(
         'assets/logo.png',
       ),
